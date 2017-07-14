@@ -1,6 +1,6 @@
 {
   "name": "vakil-telegram",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "tiny telegram client in functional way inspired by Anjana Vakil",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/fabiooshiro/vakil-telegram/issues"
   },
-  "homepage": "https://github.com/fabiooshiro/vakil-telegram#readme"
+  "homepage": "https://github.com/fabiooshiro/vakil-telegram#readme",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
 }

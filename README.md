@@ -10,3 +10,11 @@ var telegram = Telegram(token);
 
 telegram('sendMessage', {chat_id: 'some chat id', text: 'Cool functional'});
 ```
+
+How to send an image
+```js
+telegram('sendPhoto', {chat_id: '-246972423', photo: fs.createReadStream('upload.jpg')});
+```
+
+Full docs at
+https://core.telegram.org/bots/api
