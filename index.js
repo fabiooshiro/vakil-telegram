@@ -15,11 +15,16 @@
                         reject(err);
                         return;
                     }
-                    if (data.ok) {
-                        resolve(data);
-                    }
-                    else {
-                        reject(data);
+                    try {
+                        var json = JSON.parse(body);
+                        if (json.ok) {
+                            resolve(json);
+                        }
+                        else {
+                            reject(json);
+                        }
+                    } catch (e) {
+                        reject(e);
                     }
                 });
             });
